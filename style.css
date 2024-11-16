@@ -115,6 +115,7 @@ header nav{ /*estamos mencionando al header y nav*/
 .card-image{
     position: relative;
     padding: 6px;
+    cursor: pointer; /*apuntar*/
 }
 .card-image img{
     border-radius: 15px;
