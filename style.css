@@ -105,11 +105,14 @@ header nav{ /*estamos mencionando al header y nav*/
 .contenido{
     position: absolute;
     margin-top: 80px;
+    width: 100%; /*mejora*/
 }
 
 .imagenes{
     columns: 5 290px;
     margin: auto;
+    margin-left: 10%; /*mejora*/
+    margin-right: 10%; /*mejora*/
 }
 
 .card-image{
@@ -175,3 +178,33 @@ header nav{ /*estamos mencionando al header y nav*/
     visibility: hidden;
     display: none;
 }
+
+@media (max-width: 1200px) {
+    .imagenes{
+        columns: 3 200px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .card-image img{
+        border-radius: 15px;
+        min-width: 180px;
+        max-width: 200px;
+    }
+  }
+
+
+  @media (max-width: 450px) {
+    .imagenes{
+        columns: 2 180px;
+    }
+
+    .card-image img{
+        min-width: 100px;
+        max-width: 180px;
+    }
+  }
+
+  /**header{
+    display: none;
+  }**/
